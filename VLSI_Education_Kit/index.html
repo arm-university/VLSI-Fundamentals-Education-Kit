@@ -1,0 +1,120 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr" ng-app="AupCourse" ng-controller="IndexController">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title }}</title>
+        
+        <link rel="stylesheet" href="html/css/foundation.css"/>
+        <link rel="stylesheet" href="html/css/app.css"/>
+        <link rel="stylesheet" href="html/css/foundation-icons/foundation-icons.css"/>
+
+        <link rel="shortcut icon" type="html/image/ico" href="html/favicon.ico" />
+    </head>
+    
+    <body>
+        <div class="row expanded logo">
+            <div class="small-12 columns">
+                <div class="aup-logo"></div>
+                <div class="edkit">
+                    <p class="lib-name">{{ libname }}</p>
+                    <p class="lib-type">{{ libtype }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="small-12 columns">
+                <table>
+                    <thead>
+                        <tr>
+                            <th ng-repeat="header in headers" width="">{{ header.name }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="row in modules">
+                            <td ng-repeat="column in headers">
+                                <p ng-repeat="item in row" ng-show="item.column == column.column"><a href="{{ item.link }}">{{ item.name }}</a></p>
+                            </td>
+                        </tr>
+                        <!-- <tr ng-repeat="row in modules">
+                            <td ng-repeat="column in row"><p ng-repeat="item in column"><a href="{{ item.link }}">{{ item.name }}</a></p></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row expanded footer">
+            <div class="small-12 columns">
+                <div class="row contact-container">
+                    <div class="small-4 medium-2 columns container-newsletter">
+                        <a href="https://www.arm.com/resources/education/education-kits" target="_blank" title="Arm University Program">
+                            <div class="contact">
+                                <div class="contact-newsletter"></div>
+                                <p>Newsletter</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-4 medium-2 columns container-facebook">
+                        <a href="https://www.facebook.com/ArmEducation/" target="_blank" title='"Like" the Arm University Program Facebook page'>
+                            <div class="contact">
+                                <div class="contact-facebook"></div>
+                                <p>Facebook</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-4 medium-2 columns container-email">
+                        <a href="mailto:University@arm.com; university-newsletter@arm.com?Subject=ARM%20University%20Programme%20Support&Body=By%20requesting%20a%20donation%20I%20agree%20to%20receive%20information%20and%20updates%20including%2C%20but%20not%20limited%20to%2C%20the%20quarterly%20ARM%20University%20Program%20Newsletter.%0A%0APlease%20fill-in%20the%20following%20information%3A%20%0A%0AUniversity%3A%20%0ACountry%3A%20%0ALast%20Name%3A%20%0AFirst%20Name%3A%20%0APosition%3A%20%0ADepartment%3A%20%0AEmail%3A%20%0ATelephone%3A%20%0ACurrent%20Course/Lab%20Name%3A%20%0ACurrently%20Used%20Processors/Architectures%20in%20your%20Course/Lab%3A%20%0A%0AQuestion%3A%20%0A%0ANote%3A%0A1.%20Please%20send%20this%20request%20from%20your%20official%20university%20email%0A" title="Email Arm University Program">
+                            <div class="contact">
+                                <div class="contact-email"></div>
+                                <p>Email</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-4 medium-2 columns container-podcast">
+                        <a href="https://www.linkedin.com/company/arm" target="_blank" title="Arm LinkedIn">
+                            <div class="contact">
+                                <div class="contact-podcast"></div>
+                                <p>Podcasts</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-4 medium-2 columns container-twitter">
+                        <a href="https://twitter.com/ARMEducation" target="_blank" title="Follow the Arm University Program on Twitter">
+                            <div class="contact">
+                                <div class="contact-twitter"></div>
+                                <p>Twitter</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-4 medium-2 columns container-youtube">
+                        <a href="https://www.youtube.com/channel/UC17LRVzlkgLwKfTpjW_N5vg" target="_blank" title="Follow the Arm University Program on Youtube">
+                            <div class="contact">
+                                <div class="contact-youtube"></div>
+                                <p>Youtube</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row end-note">
+                    <div class="small-3 columns">
+                        <div class="footer-logo"></div>
+                    </div>
+                    <div class="small-9 columns">
+                        <p class="copyright">Arm University Program<br class="multiline"> © Arm All rights reserved. 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end of footer -->
+
+        <script src="html/js/vendor/jquery.js"></script>
+        <script src="html/js/vendor/foundation.min.js"></script>
+        <script src="html/js/angular/angular.min.js"></script>
+
+        <script src="html/js/controllers.js"></script>
+        <script src="html/js/app.js"></script>
+        <script src="html/js/config.js"></script>
+    </body>
+</html>
