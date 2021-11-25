@@ -1,0 +1,9 @@
+nand3_1x I0 ( .a(ra1[0]), .b(ra1[1]), .c(ra1[2]), .y(rd1));
+nand3_1x I1 ( .a(ra2[0]), .b(ra2[1]), .c(ra2[2]), .y(rd2));
+invbuf_4x I3 ( .s(rd1), .s_out(read1b), .sb_out(read1));
+invbuf_4x I4 ( .s(rd2), .s_out(read2b), .sb_out(read2));
+invbuf_4x I5 ( .s(wr), .s_out(writeb), .sb_out(write));
+nand5_1x I6 ( .b(wa[1]), .e(RegWrite), .c(wa[2]), .a(wa[0]), .y(wr),
+     .d(ph2));
+
+endmodule

@@ -1,0 +1,5 @@
+regram_dp regram_dp[7:0] ( .r1(r1[7:0]), .r2(r2[7:0]), .w(w[7:0]),
+     .read1(read1), .read1b(read1b), .read2(read2), .read2b(read2b),
+     .write(write), .writeb(writeb));
+
+endmodule

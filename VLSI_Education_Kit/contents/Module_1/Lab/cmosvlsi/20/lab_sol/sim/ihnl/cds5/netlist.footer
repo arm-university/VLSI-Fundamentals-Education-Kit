@@ -1,0 +1,5 @@
+mux2_dp_1x mux2_dp_1x[2:0] ( .y(y[2:0]), .d0(d0[2:0]), .d1(d1[2:0]),
+     .s(sbb), .sb(sb));
+invbuf_4x I1 ( .s(s), .s_out(sbb), .sb_out(sb));
+
+endmodule

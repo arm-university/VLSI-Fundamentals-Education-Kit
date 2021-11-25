@@ -1,0 +1,8 @@
+cUiMoveCellToBin {aludec} {Ignore}
+cUiSelectCellP {aludec}
+cUiSetViewStatus {aludec} {layout} {1}
+cUiSetViewStatus {aludec} {logical} {0}
+cUiSetViewStatus {aludec} {abstract.pin} {0}
+cUiSetViewStatus {aludec} {abstract.ext} {0}
+cUiSetViewStatus {aludec} {abstract} {0}
+cUiSetViewStatus {aludec} {abstract.ver} {0}

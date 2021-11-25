@@ -1,0 +1,4 @@
+pmos #(0.1)  M1( y, cds_globals.vdd_, a);
+nmos #(0.1)  M0( y, cds_globals.gnd_, a);
+
+endmodule

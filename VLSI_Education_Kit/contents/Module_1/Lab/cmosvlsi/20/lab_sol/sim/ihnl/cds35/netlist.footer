@@ -1,0 +1,12 @@
+pmos #(0.1)  M2( y, cds_globals.vdd_, e);
+pmos #(0.1)  M3( y, cds_globals.vdd_, d);
+pmos #(0.1)  M5( y, cds_globals.vdd_, c);
+pmos #(0.1)  M9( y, cds_globals.vdd_, a);
+pmos #(0.1)  M8( y, cds_globals.vdd_, b);
+nmos #(0.1)  M0( y, mid, e);
+nmos #(0.1)  M1( mid, net028, d);
+nmos #(0.1)  M4( net028, net045, c);
+nmos #(0.1)  M6( net045, net042, b);
+nmos #(0.1)  M7( net042, cds_globals.gnd_, a);
+
+endmodule

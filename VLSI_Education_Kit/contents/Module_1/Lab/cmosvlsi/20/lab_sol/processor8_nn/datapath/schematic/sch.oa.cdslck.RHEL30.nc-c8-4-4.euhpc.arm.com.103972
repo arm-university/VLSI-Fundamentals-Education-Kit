@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      oyiben01
+HostName                       nc-c8-4-4.euhpc.arm.com
+ProcessIdentifier              103972
+ProcessCreationTime_UTC        1597995602
+ProcessCreationTime_Readable   Fri Aug 21 08:40:02 2020 BST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/oyiben01/Desktop/VLSI/cmosvlsi/200/lab_sol/processor8_nn/datapath/schematic/sch.oa.cdslck
+TimeEditLocked                 Fri Aug 21 08:40:50 2020 BST

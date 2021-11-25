@@ -1,0 +1,13 @@
+cUiAddMessageView {latchenr_c_1x} {abstract.pin} {514} {(ABS-514): Cell latchenr_c_1x: prBoundary successfully created.}
+cUiAddMessageView {latchenr_c_1x} {abstract.pin} {515} {(ABS-515): Cell latchenr_c_1x: prBoundary does not enclose all cell view geometry. Specify any missing layers in the Using geometry on layers field.}
+cUiAddMessageView {latchenr_c_1x} {abstract.pin} {501} {(ABS-501): Cell latchenr_c_1x: 7 existing terminals, no pins will be added}
+cUiAddMessageView {latchenr_c_1x} {abstract.ext} {602} {(ABS-602): Cell latchenr_c_1x: extracting 7 nets}
+cUiAddMessageView {latchenr_c_1x} {abstract.ext} {604} {(ABS-604): Cell latchenr_c_1x: extracting net en, 1 of 7}
+cUiAddMessageView {latchenr_c_1x} {abstract.ext} {604} {(ABS-604): Cell latchenr_c_1x: extracting net q, 2 of 7}
+cUiAddMessageView {latchenr_c_1x} {abstract.ext} {604} {(ABS-604): Cell latchenr_c_1x: extracting net ph, 3 of 7}
+cUiAddMessageView {latchenr_c_1x} {abstract.ext} {604} {(ABS-604): Cell latchenr_c_1x: extracting net reset, 4 of 7}
+cUiAddMessageView {latchenr_c_1x} {abstract.ext} {604} {(ABS-604): Cell latchenr_c_1x: extracting net d, 5 of 7}
+cUiAddMessageView {latchenr_c_1x} {abstract.ext} {604} {(ABS-604): Cell latchenr_c_1x: extracting net gnd!, 6 of 7}
+cUiAddMessageView {latchenr_c_1x} {abstract.ext} {604} {(ABS-604): Cell latchenr_c_1x: extracting net vdd!, 7 of 7}
+cUiAddMessageView {latchenr_c_1x} {abstract} {1076} {(ABS-1076): Cell latchenr_c_1x: Terminal d has no pins on Metal1-Metal2 Routing grid}
+cUiAddMessageView {latchenr_c_1x} {abstract} {914} {(ABS-914): Cell latchenr_c_1x: predefined site core will be used}

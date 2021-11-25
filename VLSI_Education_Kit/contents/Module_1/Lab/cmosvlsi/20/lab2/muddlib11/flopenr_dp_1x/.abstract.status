@@ -1,0 +1,7 @@
+cUiMoveCellToBin {flopenr_dp_1x} {Ignore}
+cUiSetViewStatus {flopenr_dp_1x} {layout} {1}
+cUiSetViewStatus {flopenr_dp_1x} {logical} {0}
+cUiSetViewStatus {flopenr_dp_1x} {abstract.pin} {0}
+cUiSetViewStatus {flopenr_dp_1x} {abstract.ext} {0}
+cUiSetViewStatus {flopenr_dp_1x} {abstract} {0}
+cUiSetViewStatus {flopenr_dp_1x} {abstract.ver} {0}

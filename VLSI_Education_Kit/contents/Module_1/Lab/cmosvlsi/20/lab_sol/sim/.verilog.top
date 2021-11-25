@@ -1,0 +1,57 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+
+reg  ALUSrcA, AdrSrc, ImmSrc, PCWrite, RegWrite, ph1, ph2, reset;
+
+wire [7:0]  WriteData;
+wire [2:0]  Rd;
+wire [31:0]  Instr;
+wire [4:0]  Funct;
+wire [7:0]  Adr;
+wire [1:0]  ALUFlags;
+
+reg [1:0]  ALUControl;
+reg [7:0]  ReadData;
+reg [1:0]  ALUSrcB;
+reg [1:0]  ResultSrc;
+reg [1:0]  RegSrc;
+reg [3:0]  IRWrite;
+
+// Buses in the design
+
+wire  [7:0]  scra;
+
+wire  [7:0]  ALUOut;
+
+wire  [7:0]  scrb;
+
+wire  [7:0]  ExtImm;
+
+wire  [7:0]  rd1;
+
+wire  [0:2]  net061;
+
+wire  [7:0]  rd2;
+
+wire  [7:0]  Result;
+
+wire  [7:0]  Data;
+
+wire  [0:2]  net067;
+
+wire  [7:0]  PC;
+
+wire  [7:0]  a;
+
+wire  [7:0]  ALUResult;
+
+
+
+datapath top(ALUFlags, Adr, Funct, Instr[31:25], Rd, WriteData, 
+     ALUControl, ALUSrcA, ALUSrcB, AdrSrc, IRWrite, ImmSrc, PCWrite, 
+     ReadData, RegSrc, RegWrite, ResultSrc, ph1, ph2, reset); 
+ 

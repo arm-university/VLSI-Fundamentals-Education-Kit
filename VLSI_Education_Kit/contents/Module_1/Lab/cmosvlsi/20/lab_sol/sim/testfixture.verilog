@@ -1,0 +1,31 @@
+
+// Verilog stimulus file.
+// Please do not create a module in this file.
+
+
+// Default verilog stimulus. 
+
+initial
+begin 
+
+   ALUControl[1:0] = 2'b00;
+
+   ALUSrcA = 1'b0;
+   ALUSrcB[1:0] = 2'b00;
+
+   AdrSrc = 1'b0;
+   IRWrite[3:0] = 4'b0000;
+
+   ImmSrc = 1'b0;
+   PCWrite = 1'b0;
+   ReadData[7:0] = 8'b00000000;
+
+   RegSrc[1:0] = 2'b00;
+
+   RegWrite = 1'b0;
+   ResultSrc[1:0] = 2'b00;
+
+   ph1 = 1'b0;
+   ph2 = 1'b0;
+   reset = 1'b0;
+end 

@@ -1,0 +1,18 @@
+// Library - muddlib11, Cell - nor2_1x, View - cmos_sch
+// LAST TIME SAVED: Jun 14 20:03:02 2020
+// NETLIST TIME: Aug 21 08:42:26 2020
+`timescale 1ns / 1ns 
+
+module nor2_1x ( y, a, b );
+
+output  y;
+
+input  a, b;
+
+
+specify 
+    specparam CDS_LIBNAME  = "muddlib11";
+    specparam CDS_CELLNAME = "nor2_1x";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+

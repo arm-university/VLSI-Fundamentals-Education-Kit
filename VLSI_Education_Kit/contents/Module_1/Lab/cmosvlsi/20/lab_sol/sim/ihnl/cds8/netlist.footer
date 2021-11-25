@@ -1,0 +1,4 @@
+mux2_1x_8 I1 ( .d0(a[7:0]), .d1(a_b[7:0]), .y(y[7:0]), .s(invert));
+inv_1x_8 I0 ( .y(a_b[7:0]), .a(a[7:0]));
+
+endmodule

@@ -1,0 +1,8 @@
+cUiMoveCellToBin {regramadrbuf} {Ignore}
+cUiSelectCellP {regramadrbuf}
+cUiSetViewStatus {regramadrbuf} {layout} {1}
+cUiSetViewStatus {regramadrbuf} {logical} {0}
+cUiSetViewStatus {regramadrbuf} {abstract.pin} {0}
+cUiSetViewStatus {regramadrbuf} {abstract.ext} {0}
+cUiSetViewStatus {regramadrbuf} {abstract} {0}
+cUiSetViewStatus {regramadrbuf} {abstract.ver} {0}

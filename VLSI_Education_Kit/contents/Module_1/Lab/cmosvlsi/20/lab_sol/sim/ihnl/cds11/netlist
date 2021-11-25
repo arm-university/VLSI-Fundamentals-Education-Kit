@@ -1,0 +1,26 @@
+// Library - muddlib11, Cell - and2_1x, View - cmos_sch
+// LAST TIME SAVED: Jun 14 20:05:09 2020
+// NETLIST TIME: Aug 21 08:42:26 2020
+`timescale 1ns / 1ns 
+
+module and2_1x ( y, a, b );
+
+output  y;
+
+input  a, b;
+
+
+specify 
+    specparam CDS_LIBNAME  = "muddlib11";
+    specparam CDS_CELLNAME = "and2_1x";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+
+pmos #(0.1)  M2( net019, cds_globals.vdd_, b);
+pmos #(0.1)  M3( net019, cds_globals.vdd_, a);
+pmos #(0.1)  M4( y, cds_globals.vdd_, net019);
+nmos #(0.1)  M0( net019, mid, b);
+nmos #(0.1)  M1( mid, cds_globals.gnd_, a);
+nmos #(0.1)  M5( y, cds_globals.gnd_, net019);
+
+endmodule

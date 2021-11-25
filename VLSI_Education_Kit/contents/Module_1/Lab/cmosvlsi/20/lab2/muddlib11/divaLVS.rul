@@ -1,0 +1,108 @@
+/*
+ * LVS rules file created by NCSU CDK
+ */
+
+lvsRules(
+procedure(combineParallelFET(m1 m2) 
+    prog((mt m_m1 m_m2) 
+	(mt = list(nil)) 
+	if((((m1->l) != nil) && ((m2->l) != nil)) then 
+	    if(((m1->l) != (m2->l)) 
+		return("doNotCombine")
+	    ) 
+	    (mt->l = (m1->l))
+	) 
+	if(((m1->m) != nil) then 
+	    (m_m1 = (m1->m)) else 
+	    (m_m1 = 1)
+	) 
+	if(((m2->m) != nil) then 
+	    (m_m2 = (m2->m)) else 
+	    (m_m2 = 1)
+	)
+	if((((m1->w) != nil) && ((m2->w) != nil)) then 
+	    (mt->w = ((m_m1 * (m1->w)) + (m_m2 * (m2->w))))
+	) 
+	return(mt)
+    )
+)
+procedure(compareFET(m1 m2) 
+    prog((errMsg err m) 
+	(errMsg = "") 
+	(err = nil) 
+	if(((m1->l) == nil) then 
+	    (errMsg = strcat(errMsg "Missing transistor length property \"l\" (layout)\n")) 
+	    (err = t)
+	) 
+	if(((m2->l) == nil) then 
+	    (errMsg = strcat(errMsg "Missing transistor length property \"l\" (schematic)\n")) 
+	    (err = t)
+	)
+	if(((m1->w) == nil) then 
+	    (errMsg = strcat(errMsg "Missing transistor width property \"w\" (layout)\n")) 
+	    (err = t)
+	) 
+	if(((m2->w) == nil) then 
+	    (errMsg = strcat(errMsg "Missing transistor width property \"w\" (schematic)\n")) 
+	    (err = t)
+	) 
+	if(err then 
+	    return(errMsg)
+	) 
+	if(((abs(((m1->l) - (m2->l))) * 1000000.0) > 0.01) then 
+	    (errMsg = strcat(errMsg 
+		    sprintf(nil "Transistor length mismatch: layout %.2f um, schematic %.2f um\n" 
+			((m1->l) * 1000000.0) 
+			((m2->l) * 1000000.0)
+		    )
+		)) 
+	    (err = t)
+	) 
+	if(((m2->m) != nil) then 
+	    (m = (m2->m)) else 
+	    (m = 1)
+	)
+	if(((abs(((m1->w) - ((m2->w) * m))) * 1000000.0) > 0.01) then 
+	    (errMsg = strcat(errMsg 
+		    sprintf(nil "Transistor width mismatch: layout %.2f um, schematic %.2f um\n" 
+			((m1->w) * 1000000.0) 
+			((m2->w) * m * 1000000.0)
+		    )
+		)) 
+	    (err = t)
+	) 
+	if(err then 
+	    return(errMsg) else 
+	    return(nil)
+	)
+    )
+)
+procedure(combineParallelCap(c1 c2) 
+    prog((ct) 
+	(ct = list(nil)) 
+	if((((c1->c) != nil) && ((c2->c) != nil)) 
+	    (ct->c = ((c1->c) + (c2->c)))
+	) 
+	return(ct)
+    )
+)
+permuteDevice(parallel "nfet" combineParallelFET)
+permuteDevice(parallel "pfet" combineParallelFET)
+permuteDevice(parallel "nmos" combineParallelFET)
+permuteDevice(parallel "pmos" combineParallelFET)
+permuteDevice(parallel "nmos4" combineParallelFET)
+permuteDevice(parallel "pmos4" combineParallelFET)
+permuteDevice(parallel "cap" combineParallelCap)
+compareDeviceProperty("nfet" compareFET)
+compareDeviceProperty("pfet" compareFET)
+compareDeviceProperty("nmos" compareFET)
+compareDeviceProperty("pmos" compareFET)
+compareDeviceProperty("nmos4" compareFET)
+compareDeviceProperty("pmos4" compareFET)
+permuteDevice(MOS "nfet")
+permuteDevice(MOS "pfet")
+permuteDevice(MOS "nmos")
+permuteDevice(MOS "pmos")
+permuteDevice(MOS "nmos4")
+permuteDevice(MOS "pmos4")
+)

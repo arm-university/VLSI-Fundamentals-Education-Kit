@@ -1,0 +1,21 @@
+// Library - wordlib8, Cell - flop_1x_8, View - schematic
+// LAST TIME SAVED: Jun 14 19:29:06 2020
+// NETLIST TIME: Aug 21 08:42:26 2020
+`timescale 1ns / 1ns 
+
+module flop_1x_8 ( q, d, ph1, ph2 );
+
+
+input  ph1, ph2;
+
+output [7:0]  q;
+
+input [7:0]  d;
+
+
+specify 
+    specparam CDS_LIBNAME  = "wordlib8";
+    specparam CDS_CELLNAME = "flop_1x_8";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

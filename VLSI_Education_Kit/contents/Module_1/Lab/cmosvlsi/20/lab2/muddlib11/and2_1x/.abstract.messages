@@ -1,0 +1,11 @@
+cUiAddMessageView {and2_1x} {abstract.pin} {514} {(ABS-514): Cell and2_1x: prBoundary successfully created.}
+cUiAddMessageView {and2_1x} {abstract.pin} {515} {(ABS-515): Cell and2_1x: prBoundary does not enclose all cell view geometry. Specify any missing layers in the Using geometry on layers field.}
+cUiAddMessageView {and2_1x} {abstract.pin} {501} {(ABS-501): Cell and2_1x: 5 existing terminals, no pins will be added}
+cUiAddMessageView {and2_1x} {abstract.ext} {602} {(ABS-602): Cell and2_1x: extracting 5 nets}
+cUiAddMessageView {and2_1x} {abstract.ext} {604} {(ABS-604): Cell and2_1x: extracting net y, 1 of 5}
+cUiAddMessageView {and2_1x} {abstract.ext} {604} {(ABS-604): Cell and2_1x: extracting net a, 2 of 5}
+cUiAddMessageView {and2_1x} {abstract.ext} {604} {(ABS-604): Cell and2_1x: extracting net b, 3 of 5}
+cUiAddMessageView {and2_1x} {abstract.ext} {604} {(ABS-604): Cell and2_1x: extracting net vdd!, 4 of 5}
+cUiAddMessageView {and2_1x} {abstract.ext} {604} {(ABS-604): Cell and2_1x: extracting net gnd!, 5 of 5}
+cUiAddMessageView {and2_1x} {abstract} {1076} {(ABS-1076): Cell and2_1x: Terminal b has no pins on Metal1-Metal2 Routing grid}
+cUiAddMessageView {and2_1x} {abstract} {914} {(ABS-914): Cell and2_1x: predefined site core will be used}

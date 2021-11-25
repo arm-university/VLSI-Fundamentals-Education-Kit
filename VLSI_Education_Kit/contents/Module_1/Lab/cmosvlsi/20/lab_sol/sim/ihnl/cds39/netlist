@@ -1,0 +1,105 @@
+// Library - processor8_nn, Cell - datapath, View - schematic
+// LAST TIME SAVED: Aug 21 08:29:17 2020
+// NETLIST TIME: Aug 21 08:42:28 2020
+`timescale 1ns / 1ns 
+
+module datapath ( ALUFlags, Adr, Funct, Instr[31:25], Rd, WriteData,
+     ALUControl, ALUSrcA, ALUSrcB, AdrSrc, IRWrite, ImmSrc, PCWrite,
+     ReadData, RegSrc, RegWrite, ResultSrc, ph1, ph2, reset );
+
+
+input  ALUSrcA, AdrSrc, ImmSrc, PCWrite, RegWrite, ph1, ph2, reset;
+
+output [7:0]  WriteData;
+output [7:0]  Adr;
+output [2:0]  Rd;
+output [1:0]  ALUFlags;
+output [4:0]  Funct;
+output [31:0]  Instr;
+
+input [1:0]  ALUControl;
+input [1:0]  ALUSrcB;
+input [1:0]  ResultSrc;
+input [7:0]  ReadData;
+input [1:0]  RegSrc;
+input [3:0]  IRWrite;
+
+// Buses in the design
+
+wire  [7:0]  ExtImm;
+
+wire  [7:0]  ALUOut;
+
+wire  [7:0]  scrb;
+
+wire  [7:0]  a;
+
+wire  [7:0]  scra;
+
+wire  [0:2]  net067;
+
+wire  [7:0]  ALUResult;
+
+wire  [7:0]  PC;
+
+wire  [7:0]  rd2;
+
+wire  [7:0]  rd1;
+
+wire  [0:2]  net061;
+
+wire  [7:0]  Data;
+
+wire  [7:0]  Result;
+
+
+specify 
+    specparam CDS_LIBNAME  = "processor8_nn";
+    specparam CDS_CELLNAME = "datapath";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+extend I45 ( .ImmSrc(ImmSrc), .ExtImm(ExtImm[7:0]),
+     .Instr(Instr[7:0]));
+mux2_1x_3 I41 ( .d1({cds_globals.vdd_, cds_globals.vdd_,
+     cds_globals.vdd_}), .s(RegSrc[0]), .y(net061[0:2]),
+     .d0(Instr[18:16]));
+mux2_1x_3 I40 ( .d1(Rd[2:0]), .s(RegSrc[1]), .y(net067[0:2]),
+     .d0(Instr[2:0]));
+alu alu ( .ALUFlags(ALUFlags[1:0]), .ALUControl(ALUControl[1:0]),
+     .result(ALUResult[7:0]), .a(scra[7:0]), .b(scrb[7:0]));
+mux3_1x_8 pcmux ( Result[7:0], ALUOut[7:0], Data[7:0], ALUResult[7:0],
+     ResultSrc[1], ResultSrc[0]);
+mux4_1x_8 srcbmux ( scrb[7:0], WriteData[7:0], ExtImm[7:0],
+     {cds_globals.gnd_, cds_globals.gnd_, cds_globals.gnd_,
+     cds_globals.gnd_, cds_globals.gnd_, cds_globals.vdd_,
+     cds_globals.gnd_, cds_globals.gnd_}, {cds_globals.gnd_,
+     cds_globals.gnd_, cds_globals.gnd_, cds_globals.gnd_,
+     cds_globals.gnd_, cds_globals.gnd_, cds_globals.gnd_,
+     cds_globals.vdd_}, ALUSrcB[1], ALUSrcB[0]);
+flopen_1x_8 ir0 ( .d(ReadData[7:0]), .en(IRWrite[0]), .q(Instr[7:0]),
+     .ph2(ph2), .ph1(ph1));
+flopen_1x_8 ir1 ( .d(ReadData[7:0]), .en(IRWrite[1]), .q({Instr[15],
+     Rd[2:0], Instr[11:8]}), .ph2(ph2), .ph1(ph1));
+flopen_1x_8 ir2 ( .d(ReadData[7:0]), .en(IRWrite[2]), .q({Funct[3:0],
+     Instr[19:16]}), .ph2(ph2), .ph1(ph1));
+flopen_1x_8 ir3 ( .d(ReadData[7:0]), .en(IRWrite[3]), .q({Instr[31:25],
+     Funct[4]}), .ph2(ph2), .ph1(ph1));
+flop_1x_8 datareg ( .d(ReadData[7:0]), .q(Data[7:0]), .ph2(ph2),
+     .ph1(ph1));
+flop_1x_8 wrdreg ( .d(rd2[7:0]), .q(WriteData[7:0]), .ph2(ph2),
+     .ph1(ph1));
+flop_1x_8 areg ( .d(rd1[7:0]), .q(a[7:0]), .ph2(ph2), .ph1(ph1));
+flop_1x_8 resreg ( .d(ALUResult[7:0]), .q(ALUOut[7:0]), .ph2(ph2),
+     .ph1(ph1));
+mux2_1x_8 adrmux ( .d0(PC[7:0]), .d1(ALUOut[7:0]), .y(Adr[7:0]),
+     .s(AdrSrc));
+mux2_1x_8 srcamux ( .d0(a[7:0]), .d1(PC[7:0]), .y(scra[7:0]),
+     .s(ALUSrcA));
+flopenr_1x_8 pcreg ( .reset(reset), .d(Result[7:0]), .en(PCWrite),
+     .q(PC[7:0]), .ph2(ph2), .ph1(ph1));
+regramarray_dp rf ( .wr15(Result[7:0]), .rd1(rd1[7:0]), .rd2(rd2[7:0]),
+     .RegWrite(RegWrite), .ph2(ph2), .ra1(net061[0:2]),
+     .ra2(net067[0:2]), .wa(Rd[2:0]));
+
+endmodule

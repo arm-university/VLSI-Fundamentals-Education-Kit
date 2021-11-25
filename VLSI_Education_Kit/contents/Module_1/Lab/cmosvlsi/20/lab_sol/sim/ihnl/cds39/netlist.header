@@ -1,0 +1,61 @@
+// Library - processor8_nn, Cell - datapath, View - schematic
+// LAST TIME SAVED: Aug 21 08:29:17 2020
+// NETLIST TIME: Aug 21 08:42:28 2020
+`timescale 1ns / 1ns 
+
+module datapath ( ALUFlags, Adr, Funct, Instr[31:25], Rd, WriteData,
+     ALUControl, ALUSrcA, ALUSrcB, AdrSrc, IRWrite, ImmSrc, PCWrite,
+     ReadData, RegSrc, RegWrite, ResultSrc, ph1, ph2, reset );
+
+
+input  ALUSrcA, AdrSrc, ImmSrc, PCWrite, RegWrite, ph1, ph2, reset;
+
+output [7:0]  WriteData;
+output [7:0]  Adr;
+output [2:0]  Rd;
+output [1:0]  ALUFlags;
+output [4:0]  Funct;
+output [31:0]  Instr;
+
+input [1:0]  ALUControl;
+input [1:0]  ALUSrcB;
+input [1:0]  ResultSrc;
+input [7:0]  ReadData;
+input [1:0]  RegSrc;
+input [3:0]  IRWrite;
+
+// Buses in the design
+
+wire  [7:0]  ExtImm;
+
+wire  [7:0]  ALUOut;
+
+wire  [7:0]  scrb;
+
+wire  [7:0]  a;
+
+wire  [7:0]  scra;
+
+wire  [0:2]  net067;
+
+wire  [7:0]  ALUResult;
+
+wire  [7:0]  PC;
+
+wire  [7:0]  rd2;
+
+wire  [7:0]  rd1;
+
+wire  [0:2]  net061;
+
+wire  [7:0]  Data;
+
+wire  [7:0]  Result;
+
+
+specify 
+    specparam CDS_LIBNAME  = "processor8_nn";
+    specparam CDS_CELLNAME = "datapath";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

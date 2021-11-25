@@ -1,0 +1,33 @@
+    logic clk;
+    logic [2:0] vectors[4:0], currentvec;
+    logic [3:0] vectornum, errors;
+
+    // read test vector file and initialize test
+    initial begin
+       $readmemb("inv.tv", vectors);
+       vectornum = 0; errors = 0;
+    end
+    // generate a clock to sequence tests
+    always begin
+       #1 clk = 1; #10; clk = 0; #9;
+    end
+    // apply test
+    always @(posedge clk) begin
+       currentvec = vectors[vectornum];
+       a = currentvec[1];
+       if (currentvec[0] === 1'bx) begin
+         $display("Completed %d tests with %d errors.", 
+                  vectornum, errors);
+         $stop;
+       end
+    end
+    // check if test was sucessful and apply next one
+    always @(negedge clk) begin
+       if ((y !== currentvec[0])) begin
+          $display("Error: inputs were a=%h b=%h", a, b);
+          $display("       output mismatches as %h (%h expected)", 
+                   currentvec[0], y);
+          errors = errors + 1;
+       end
+       vectornum = vectornum + 1;
+    end

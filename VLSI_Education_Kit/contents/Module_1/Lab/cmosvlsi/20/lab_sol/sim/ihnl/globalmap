@@ -1,0 +1,49 @@
+CADENCE IHNL11140
+$model
+muddlib11/fulladder/cmos_sch fulladder
+wordlib8/inv_1x_8/schematic inv_1x_8
+muddlib11/inv_1x/cmos_sch inv_1x
+wordlib8/flopen_1x_8/schematic flopen_1x_8
+wordlib8/or2_1x_8/schematic or2_1x_8
+muddlib11/or2_1x/cmos_sch or2_1x
+wordlib8/mux2_1x_8/schematic mux2_1x_8
+muddlib11/clkinvbuf_4x/cmos_sch clkinvbuf_4x
+processor8_nn/regram_zipper/schematic regram_zipper
+muddlib11/flop_dp_1x/cmos_sch flop_dp_1x
+muddlib11/flopenr_dp_1x/cmos_sch flopenr_dp_1x
+processor8_nn/regramadrbuf/schematic regramadrbuf
+processor8_nn/yzdetect_8/schematic yzdetect_8
+wordlib8/flop_1x_8/schematic flop_1x_8
+processor8_nn/alu/schematic alu
+wordlib8/and2_1x_8/schematic and2_1x_8
+muddlib11/mux4_dp_1x/cmos_sch mux4_dp_1x
+muddlib11/mux2_dp_1x/cmos_sch mux2_dp_1x
+muddlib11/clkinvbufdual_4x/schematic clkinvbufdual_4x
+wordlib8/adder_8/schematic adder_8
+processor8_nn/extend/schematic extend
+muddlib11/and2_1x/cmos_sch and2_1x
+processor8_nn/regramarray_dp/schematic regramarray_dp
+processor8_nn/regramvector_dp/schematic regramvector_dp
+muddlib11/nor2_1x/cmos_sch nor2_1x
+wordlib8/mux3_1x_8/schematic mux3_1x_8
+processor8_nn/regram_dp/cmos_sch regram_dp
+muddlib11/nand5_1x/cmos_sch nand5_1x
+wordlib8/mux4_1x_8/schematic mux4_1x_8
+muddlib11/invbuf_4x/schematic invbuf_4x
+muddlib11/nand3_1x/cmos_sch nand3_1x
+wordlib8/flopenr_1x_8/schematic flopenr_1x_8
+muddlib11/mux3_dp_1x/cmos_sch mux3_dp_1x
+muddlib11/nand2_1x/cmos_sch nand2_1x
+muddlib11/inv_4x/cmos_sch inv_4x
+processor8_nn/condinv_8/schematic condinv_8
+processor8_nn/mux2_1x_3/schematic mux2_1x_3
+muddlib11/flopen_dp_1x/cmos_sch flopen_dp_1x
+processor8_nn/datapath/schematic datapath
+processor8_nn/regram_8/schematic regram_8
+$endmodel
+$net
+gnd! cds_globals.gnd_
+vdd! cds_globals.vdd_
+$endnet
+$param
+$endparam

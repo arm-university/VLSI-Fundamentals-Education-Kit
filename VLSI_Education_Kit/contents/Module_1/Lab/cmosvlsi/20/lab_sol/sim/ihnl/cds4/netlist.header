@@ -1,0 +1,21 @@
+// Library - processor8_nn, Cell - extend, View - schematic
+// LAST TIME SAVED: Jan  4 19:34:38 2020
+// NETLIST TIME: Aug 21 08:42:26 2020
+`timescale 1ns / 1ns 
+
+module extend ( ExtImm, ImmSrc, Instr );
+
+
+input  ImmSrc;
+
+output [7:0]  ExtImm;
+
+input [7:0]  Instr;
+
+
+specify 
+    specparam CDS_LIBNAME  = "processor8_nn";
+    specparam CDS_CELLNAME = "extend";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

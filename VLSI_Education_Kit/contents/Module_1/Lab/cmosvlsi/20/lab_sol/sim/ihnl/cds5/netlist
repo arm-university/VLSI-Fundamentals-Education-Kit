@@ -1,0 +1,27 @@
+// Library - processor8_nn, Cell - mux2_1x_3, View - schematic
+// LAST TIME SAVED: Mar 24 20:05:54 2019
+// NETLIST TIME: Aug 21 08:42:26 2020
+`timescale 1ns / 1ns 
+
+module mux2_1x_3 ( y, d0, d1, s );
+
+
+input  s;
+
+output [2:0]  y;
+
+input [2:0]  d0;
+input [2:0]  d1;
+
+
+specify 
+    specparam CDS_LIBNAME  = "processor8_nn";
+    specparam CDS_CELLNAME = "mux2_1x_3";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+mux2_dp_1x mux2_dp_1x[2:0] ( .y(y[2:0]), .d0(d0[2:0]), .d1(d1[2:0]),
+     .s(sbb), .sb(sb));
+invbuf_4x I1 ( .s(s), .s_out(sbb), .sb_out(sb));
+
+endmodule

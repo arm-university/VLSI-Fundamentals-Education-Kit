@@ -1,0 +1,13 @@
+# File Created by Oyinkuro Benafa at Sun Jun 14 20:13:02 2020
+# assisted by CdsLibEditor
+INCLUDE /home/oyiben01/Desktop/VLSI/NCSU/CDK-F08/cdssetup/cds.lib
+UNDEFINE cdsDefTechLib
+
+
+DEFINE lab3 /home/oyiben01/Desktop/VLSI/cadence/IC_CAD/lab3
+
+DEFINE arm8 /home/oyiben01/Desktop/VLSI/cmosvlsi/200/lab2/arm8
+
+DEFINE processor8_nn /home/oyiben01/Desktop/VLSI/cmosvlsi/200/lab_sol/processor8_nn
+
+

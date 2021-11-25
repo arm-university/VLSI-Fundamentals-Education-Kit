@@ -1,0 +1,81 @@
+; HMC E158 .cdsinit
+; David_Harris@hmc.edu 22 Jan 2010
+; configure some variables to make the flow cleaner 
+
+; This IL structure describes the "indirection map" used by the schematic user
+; interface (UI) to provide a flexible, simplified approach for initializing
+; the severities and values for the various SRC checks.
+;
+; change solder dot on crossover to ignored DMH 22 Jan 2010
+;
+schSRCPackagedChecks = list(
+    list("Normal"
+        list("floatingNets"      "warning")
+        list("floatingInput"     "warning")
+        list("floatingOutput"    "ignored")
+        list("floatingIO"        "warning")
+        list("floatingSwitch"    "warning")
+        list("shortedOutputs"    "warning")
+        list("unconnectedWires"  "ignored")
+        list("solderOnCrossover" "ignored")
+        list("instOverlap"       "ignored")
+        list("instOverlapValue"  0)
+        list("maxLabelOffset"    "ignored")
+        list("maxLabelOffsetUU"  0.0)
+        list("nameCollision"     "warning")
+        list("verilogSyntax"     "ignored")
+        list("VHDLSyntax"        "ignored")
+        list("instNameSyntax"    "ignored")
+        list("termNameSyntax"    "ignored")
+        list("netNameSyntax"     "ignored")
+    )
+    list("Logical Only"
+        list("floatingNets"      "warning")
+        list("floatingInput"     "warning")
+        list("floatingOutput"    "ignored")
+        list("floatingIO"        "warning")
+        list("floatingSwitch"    "warning")
+        list("shortedOutputs"    "warning")
+        list("unconnectedWires"  "ignored")
+        list("solderOnCrossover" "ignored")
+        list("instOverlap"       "ignored")
+        list("maxLabelOffset"    "ignored")
+        list("nameCollision"     "ignored")
+        list("verilogSyntax"     "ignored")
+        list("VHDLSyntax"        "ignored")
+        list("instNameSyntax"    "ignored")
+        list("termNameSyntax"    "ignored")
+        list("netNameSyntax"     "ignored")
+    )
+    list("Physical Only"
+        list("floatingNets"      "ignored")
+        list("floatingInput"     "ignored")
+        list("floatingOutput"    "ignored")
+        list("floatingIO"        "ignored")
+        list("floatingSwitch"    "ignored")
+        list("shortedOutputs"    "ignored")
+        list("unconnectedWires"  "warning")
+        list("solderOnCrossover" "warning")
+        list("instOverlap"       "ignored")
+        list("instOverlapValue"  0)
+        list("maxLabelOffset"    "ignored")
+        list("maxLabelOffsetUU"  0.0)
+        list("nameCollision"     "ignored")
+        list("verilogSyntax"     "ignored")
+        list("VHDLSyntax"        "ignored")
+        list("verilogSyntax"     "ignored")
+        list("instNameSyntax"    "ignored")
+        list("termNameSyntax"    "ignored")
+        list("netNameSyntax"     "ignored")
+    )
+    list("VHDL"
+        list("nameCollision"     "warning")
+        list("verilogSyntax"     "ignored")
+        list("VHDLSyntax"        "warning")
+    )
+    list("Verilog"
+        list("nameCollision"     "warning")
+        list("verilogSyntax"     "warning")
+        list("VHDLSyntax"        "ignored")
+    )
+)

@@ -1,0 +1,72 @@
+#/* -*- c -*- */
+#/**************************************************************************/
+#/* Defaults can be found in $SYNOPSYS/admin/setup/.synopsys_dc.setup */
+#/**************************************************************************/
+#/* Modified 14 Jan 2009 David_Harris@hmc.edu */
+set company {Harvey Mudd Colege}
+set designer {David Money Harris}
+#/**************************************************************************/
+set plot_command {lpr -Pcsps}
+set text_print_command {lpr -Pcsps}
+set text_editor_command {emacs %s &}
+set command_log_file "./synopsys-dc_shell.log"
+set view_command_log_file "./synopsys-dc_shell-view.log"
+set find_converts_name_lists "false"
+#/**************************************************************************/
+
+set SynopsysInstall [getenv "SYNOPSYS"]
+
+# You can add to this search path if you have your libraries
+# stored somewhere else... 
+set search_path [list . \
+[format "%s%s"  $SynopsysInstall /libraries/syn] \
+    [format "%s%s"  $SynopsysInstall /dw/sim_ver] ]
+
+#/* ================================================= */
+#/* Define a work library in the current project dir  */
+#/* to hold temporary files and keep the project area */
+#/* uncluttered. Note: You must create a subdirectory */ 
+#/* in your project directory called WORK.            */
+#/* ================================================= */
+define_design_lib WORK -path ./WORK
+
+#/* ================================================= */
+#/* General configuration settings.                   */
+#/* ================================================= */
+
+#set hdlin_check_no_latch true
+# MIPS processor uses two-phase latches
+set hdlin_check_no_latch false
+
+set compile_fix_multiple_port_nets true
+
+set hdlin_translate_off_skip_text true
+set verilogout_write_components true
+set verilogout_architecture_name "structural"
+set verilogout_no_tri true
+set hdlin_translate_off_skip_text true
+
+set vhdlout_use_packages [list IEEE.std_logic_1164.ALL]
+set vhdlout_write_components true
+set vhdlout_architecture_name "structural"
+set hdlin_translate_off_skip_text true
+set bus_naming_style {%s[%d]}
+
+#/***************************************************
+# *
+# * Here you can describe default libraries
+# *
+# * Typically you will define the target library (the main 
+# * cell library) in your scripts. But, you can set it here
+# * if you want to. 
+# *
+# * The synthetic library points to the DesignWare
+# * libraries which have a lot of Synopsys higher
+# * level circuit knowledge
+# *
+# *************************************************/
+set target_library [list <default-target>.db]
+set synthetic_library [list dw_foundation.sldb]
+set synlib_wait_for_design_license [list "DesignWare-Foundation"]
+set link_library [concat  [concat  "*" $target_library] $synthetic_library]
+set symbol_library [list generic.sdb]

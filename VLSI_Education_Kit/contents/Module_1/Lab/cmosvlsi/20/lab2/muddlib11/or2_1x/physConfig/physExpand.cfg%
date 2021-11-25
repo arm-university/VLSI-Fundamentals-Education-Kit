@@ -1,0 +1,16 @@
+//Revision 2
+//NOTE
+//VXL Configuration
+//END_NOTE
+
+config or2_1x;
+design muddlib11.or2_1x:cmos_sch;
+liblist muddlib11;
+
+viewlist physConfig, schematic, symbol;
+
+constraintviewlist constraint;
+stoplist layout, abstract;
+
+
+endconfig

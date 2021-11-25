@@ -1,0 +1,8 @@
+invbuf_4x wbuf[2:0] ( .s_out(wabb[2:0]), .sb_out(wab[2:0]),
+     .s(wa[2:0]));
+invbuf_4x r1buf[2:0] ( .s_out(ra1bb[2:0]), .sb_out(ra1b[2:0]),
+     .s(ra1[2:0]));
+invbuf_4x r2buf[2:0] ( .s_out(ra2bb[2:0]), .sb_out(ra2b[2:0]),
+     .s(ra2[2:0]));
+
+endmodule

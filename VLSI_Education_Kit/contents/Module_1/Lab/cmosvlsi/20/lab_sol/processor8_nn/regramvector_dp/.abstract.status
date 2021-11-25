@@ -1,0 +1,8 @@
+cUiMoveCellToBin {regramvector_dp} {Ignore}
+cUiSelectCellP {regramvector_dp}
+cUiSetViewStatus {regramvector_dp} {layout} {1}
+cUiSetViewStatus {regramvector_dp} {logical} {0}
+cUiSetViewStatus {regramvector_dp} {abstract.pin} {0}
+cUiSetViewStatus {regramvector_dp} {abstract.ext} {0}
+cUiSetViewStatus {regramvector_dp} {abstract} {0}
+cUiSetViewStatus {regramvector_dp} {abstract.ver} {0}

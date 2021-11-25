@@ -1,0 +1,251 @@
+
+#
+# Preferences
+#
+preferences set toolbar-Standard-WatchWindow {
+  usual
+  shown 0
+}
+preferences set plugin-enable-svdatabrowser-new 1
+preferences set toolbar-Windows-WatchWindow {
+  usual
+  shown 0
+}
+preferences set toolbar-Standard-Console {
+  usual
+  position -pos 1
+}
+preferences set toolbar-Search-Console {
+  usual
+  position -pos 2
+}
+preferences set toolbar-Standard-WaveWindow {
+  usual
+  position -pos 1
+}
+preferences set plugin-enable-groupscope 0
+preferences set plugin-enable-interleaveandcompare 0
+preferences set plugin-enable-waveformfrequencyplot 0
+preferences set toolbar-SimControl-WatchWindow {
+  usual
+  shown 0
+}
+preferences set whats-new-dont-show-at-startup 1
+preferences set toolbar-TimeSearch-WatchWindow {
+  usual
+  shown 0
+}
+
+#
+# Mnemonic Maps
+#
+mmap new -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+#
+# Design Browser windows
+#
+if {[catch {window new WatchList -name "Design Browser 1" -geometry 1920x1013+0+29}] != ""} {
+    window geometry "Design Browser 1" 1920x1013+0+29
+}
+window target "Design Browser 1" on
+browser using {Design Browser 1}
+browser set -scope  simulator::testbench.dut.arm.dp 
+browser set \
+    -signalsort name
+browser yview see  simulator::testbench.dut.arm.dp 
+browser timecontrol set -lock 0
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 1" -geometry 1920x1013+0+29}] != ""} {
+    window geometry "Waveform 1" 1920x1013+0+29
+}
+window target "Waveform 1" on
+waveform using {Waveform 1}
+waveform sidebar visibility partial
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 175 \
+    -units ps \
+    -valuewidth 75
+waveform baseline set -time 0
+
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.rf.wabb[2:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.rf.wab[2:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.rf.wa[2:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.rf.w[7:0]}
+	} ]
+set id [waveform add -signals  {
+	simulator::testbench.dut.arm.dp.rf.vdd_
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.rf.rd2[7:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.rf.rd1[7:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.rf.ra2bb[2:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.rf.ra2b[2:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.rf.ra2[2:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.rf.ra1bb[2:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.rf.ra1b[2:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.rf.ra1[2:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.rf.r15[7:0]}
+	} ]
+set id [waveform add -signals  {
+	simulator::testbench.dut.arm.dp.rf.ph2
+	} ]
+set id [waveform add -signals  {
+	simulator::testbench.dut.arm.dp.rf.net017
+	} ]
+set id [waveform add -signals  {
+	simulator::testbench.dut.arm.dp.rf.net016
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.rf.net015[0:7]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.rf.net014[0:7]}
+	} ]
+set id [waveform add -signals  {
+	simulator::testbench.dut.arm.dp.rf.gnd_
+	} ]
+set id [waveform add -signals  {
+	simulator::testbench.dut.arm.dp.rf.RegWrite
+	} ]
+set id [waveform add -signals  {
+	simulator::testbench.dut.arm.dp.reset
+	} ]
+set id [waveform add -signals  {
+	simulator::testbench.dut.arm.dp.ph2
+	} ]
+set id [waveform add -signals  {
+	simulator::testbench.dut.arm.dp.ph1
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.WriteData[7:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.SrcB[7:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.SrcA[7:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.ResultSrc[1:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.Result[7:0]}
+	} ]
+set id [waveform add -signals  {
+	simulator::testbench.dut.arm.dp.RegWrite
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.RegSrc[1:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.ReadData[7:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.RD2[7:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.RD1[7:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.RA2[2:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.RA1[2:0]}
+	} ]
+set id [waveform add -signals  {
+	simulator::testbench.dut.arm.dp.PCWrite
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.PC[7:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.Instr[31:0]}
+	} ]
+set id [waveform add -signals  {
+	simulator::testbench.dut.arm.dp.ImmSrc
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.IRWrite[3:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.ExtImm[7:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.Data[7:0]}
+	} ]
+set id [waveform add -signals  {
+	simulator::testbench.dut.arm.dp.AdrSrc
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.Adr[7:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.ALUSrcB[1:0]}
+	} ]
+set id [waveform add -signals  {
+	simulator::testbench.dut.arm.dp.ALUSrcA
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.ALUResult[7:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.ALUOut[7:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.ALUFlags[1:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.ALUControl[1:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::testbench.dut.arm.dp.A[7:0]}
+	} ]
+
+waveform xview limits 0 512000ps
+
+#
+# Waveform Window Links
+#
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 730x250+448+332
+
+#
+# Layout selection
+#

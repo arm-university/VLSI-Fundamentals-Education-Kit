@@ -1,0 +1,6 @@
+invbuf_4x I1 ( .s(s[0]), .s_out(s0bb), .sb_out(s0b));
+invbuf_4x I5 ( .s(s[1]), .s_out(s1bb), .sb_out(s1b));
+mux3_dp_1x mux3_dp_1x[7:0] ( .y(y[7:0]), .d0(d0[7:0]), .d1(d1[7:0]),
+     .d2(d2[7:0]), .s0(s0bb), .s0b(s0b), .s1(s1bb), .s1b(s1b));
+
+endmodule

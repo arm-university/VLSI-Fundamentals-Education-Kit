@@ -1,0 +1,7 @@
+cUiMoveCellToBin {mux4_dp_1x} {Ignore}
+cUiSetViewStatus {mux4_dp_1x} {layout} {1}
+cUiSetViewStatus {mux4_dp_1x} {logical} {0}
+cUiSetViewStatus {mux4_dp_1x} {abstract.pin} {0}
+cUiSetViewStatus {mux4_dp_1x} {abstract.ext} {0}
+cUiSetViewStatus {mux4_dp_1x} {abstract} {0}
+cUiSetViewStatus {mux4_dp_1x} {abstract.ver} {0}

@@ -1,0 +1,7 @@
+cUiMoveCellToBin {invbuf_4x} {Ignore}
+cUiSetViewStatus {invbuf_4x} {layout} {1}
+cUiSetViewStatus {invbuf_4x} {logical} {0}
+cUiSetViewStatus {invbuf_4x} {abstract.pin} {0}
+cUiSetViewStatus {invbuf_4x} {abstract.ext} {0}
+cUiSetViewStatus {invbuf_4x} {abstract} {0}
+cUiSetViewStatus {invbuf_4x} {abstract.ver} {0}

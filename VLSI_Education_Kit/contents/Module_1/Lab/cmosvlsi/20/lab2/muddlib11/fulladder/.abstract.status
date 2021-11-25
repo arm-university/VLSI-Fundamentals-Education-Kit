@@ -1,0 +1,7 @@
+cUiSelectCellP {fulladder}
+cUiSetViewStatus {fulladder} {layout} {1}
+cUiSetViewStatus {fulladder} {logical} {0}
+cUiSetViewStatus {fulladder} {abstract.pin} {3}
+cUiSetViewStatus {fulladder} {abstract.ext} {1}
+cUiSetViewStatus {fulladder} {abstract} {3}
+cUiSetViewStatus {fulladder} {abstract.ver} {0}

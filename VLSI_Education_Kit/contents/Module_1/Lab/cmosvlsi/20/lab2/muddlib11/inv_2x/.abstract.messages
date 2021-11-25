@@ -1,0 +1,9 @@
+cUiAddMessageView {inv_2x} {abstract.pin} {514} {(ABS-514): Cell inv_2x: prBoundary successfully created.}
+cUiAddMessageView {inv_2x} {abstract.pin} {515} {(ABS-515): Cell inv_2x: prBoundary does not enclose all cell view geometry. Specify any missing layers in the Using geometry on layers field.}
+cUiAddMessageView {inv_2x} {abstract.pin} {501} {(ABS-501): Cell inv_2x: 4 existing terminals, no pins will be added}
+cUiAddMessageView {inv_2x} {abstract.ext} {602} {(ABS-602): Cell inv_2x: extracting 4 nets}
+cUiAddMessageView {inv_2x} {abstract.ext} {604} {(ABS-604): Cell inv_2x: extracting net y, 1 of 4}
+cUiAddMessageView {inv_2x} {abstract.ext} {604} {(ABS-604): Cell inv_2x: extracting net a, 2 of 4}
+cUiAddMessageView {inv_2x} {abstract.ext} {604} {(ABS-604): Cell inv_2x: extracting net vdd!, 3 of 4}
+cUiAddMessageView {inv_2x} {abstract.ext} {604} {(ABS-604): Cell inv_2x: extracting net gnd!, 4 of 4}
+cUiAddMessageView {inv_2x} {abstract} {914} {(ABS-914): Cell inv_2x: predefined site core will be used}

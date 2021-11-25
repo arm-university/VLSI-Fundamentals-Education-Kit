@@ -1,0 +1,46 @@
+// Library - muddlib11, Cell - flopen_dp_1x, View - cmos_sch
+// LAST TIME SAVED: Feb 17 03:56:16 2012
+// NETLIST TIME: Aug 21 08:42:26 2020
+`timescale 1ns / 1ns 
+
+module flopen_dp_1x ( q, d, en, enb, ph1, ph1b, ph2, ph2b );
+
+output  q;
+
+input  d, en, enb, ph1, ph1b, ph2, ph2b;
+
+
+specify 
+    specparam CDS_LIBNAME  = "muddlib11";
+    specparam CDS_CELLNAME = "flopen_dp_1x";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+
+rnmos #(0.1)  M18( net030, masterb, ph2b);
+rnmos #(0.1)  M19( net068, slaveb, ph1b);
+rpmos #(0.1)  M17( net057, slaveb, ph1);
+rpmos #(0.1)  M15( net054, masterb, ph2);
+nmos #(0.1)  M1( master, cds_globals.gnd_, masterb);
+nmos #(0.1)  M2( masterb, masterinb, ph2);
+nmos #(0.1)  M5( masterinb, net016, d);
+nmos #(0.1)  M7( net016, cds_globals.gnd_, en);
+nmos #(0.1)  M10( net018, masterinb, slaveb);
+nmos #(0.1)  M11( cds_globals.gnd_, net018, enb);
+nmos #(0.1)  M14( cds_globals.gnd_, net030, master);
+nmos #(0.1)  M22( slave, cds_globals.gnd_, slaveb);
+nmos #(0.1)  M21( slaveb, master, ph1);
+nmos #(0.1)  M20( cds_globals.gnd_, net068, slave);
+nmos #(0.1)  M26( q, cds_globals.gnd_, slave);
+pmos #(0.1)  M0( master, cds_globals.vdd_, masterb);
+pmos #(0.1)  M3( masterb, masterinb, ph2b);
+pmos #(0.1)  M4( masterinb, net048, d);
+pmos #(0.1)  M6( net048, cds_globals.vdd_, enb);
+pmos #(0.1)  M8( net046, masterinb, slaveb);
+pmos #(0.1)  M9( cds_globals.vdd_, net046, en);
+pmos #(0.1)  M16( cds_globals.vdd_, net054, master);
+pmos #(0.1)  M24( slaveb, master, ph1b);
+pmos #(0.1)  M25( slave, cds_globals.vdd_, slaveb);
+pmos #(0.1)  M23( cds_globals.vdd_, net057, slave);
+pmos #(0.1)  M27( q, cds_globals.vdd_, slave);
+
+endmodule

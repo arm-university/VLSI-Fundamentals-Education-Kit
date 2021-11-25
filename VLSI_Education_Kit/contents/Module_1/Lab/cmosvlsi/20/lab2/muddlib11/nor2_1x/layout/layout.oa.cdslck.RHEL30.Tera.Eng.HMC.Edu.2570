@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      nboorman
+HostName                       Tera.Eng.HMC.Edu
+ProcessIdentifier              2570
+ProcessCreationTime_UTC        1579633372
+ProcessCreationTime_Readable   Tue Jan 21 14:02:52 2020 EST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /courses/cmosvlsi/20/lab2/muddlib11/nor2_1x/layout/layout.oa.cdslck
+TimeEditLocked                 Tue Jan 21 14:04:07 2020 EST

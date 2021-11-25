@@ -1,0 +1,24 @@
+nmos #(0.1)  M9( net11, net38, s1b);
+nmos #(0.1)  M11( net11, net32, s1);
+nmos #(0.1)  M12( net38, net26, s0b);
+nmos #(0.1)  M13( net38, net23, s0);
+nmos #(0.1)  M14( net32, net20, s0b);
+nmos #(0.1)  M15( net32, net17, s0);
+nmos #(0.1)  M16( net26, cds_globals.gnd_, d0);
+nmos #(0.1)  M17( net23, cds_globals.gnd_, d1);
+nmos #(0.1)  M18( net20, cds_globals.gnd_, d2);
+nmos #(0.1)  M19( net17, cds_globals.gnd_, d3);
+nmos #(0.1)  M20( y, cds_globals.gnd_, net11);
+pmos #(0.1)  M0( net61, cds_globals.vdd_, d0);
+pmos #(0.1)  M1( net58, cds_globals.vdd_, d1);
+pmos #(0.1)  M2( net55, cds_globals.vdd_, d2);
+pmos #(0.1)  M3( net52, cds_globals.vdd_, d3);
+pmos #(0.1)  M4( net62, net61, s0);
+pmos #(0.1)  M5( net62, net58, s0b);
+pmos #(0.1)  M6( net56, net55, s0);
+pmos #(0.1)  M7( net56, net52, s0b);
+pmos #(0.1)  M8( net11, net62, s1);
+pmos #(0.1)  M10( net11, net56, s1b);
+pmos #(0.1)  M21( y, cds_globals.vdd_, net11);
+
+endmodule

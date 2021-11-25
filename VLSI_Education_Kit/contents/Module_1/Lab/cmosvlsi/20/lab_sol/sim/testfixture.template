@@ -1,0 +1,38 @@
+
+`timescale 1ns / 100ps
+
+module test;
+
+
+
+reg  ALUSrcA, AdrSrc, ImmSrc, PCWrite, RegWrite, ph1, ph2, reset;
+
+wire [7:0]  WriteData;
+wire [2:0]  Rd;
+wire [31:0]  Instr;
+wire [4:0]  Funct;
+wire [7:0]  Adr;
+wire [1:0]  ALUFlags;
+
+reg [1:0]  ALUControl;
+reg [7:0]  ReadData;
+reg [1:0]  ALUSrcB;
+reg [1:0]  ResultSrc;
+reg [1:0]  RegSrc;
+reg [3:0]  IRWrite;
+
+
+
+datapath top(ALUFlags, Adr, Funct, Instr[31:25], Rd, WriteData, 
+     ALUControl, ALUSrcA, ALUSrcB, AdrSrc, IRWrite, ImmSrc, PCWrite, 
+     ReadData, RegSrc, RegWrite, ResultSrc, ph1, ph2, reset); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /courses/cmosvlsi/20/lab_sol/sim/testfixture.verilog file
+`include "/courses/cmosvlsi/20/lab_sol/sim/testfixture.verilog"
+
+`endif
+
+endmodule 

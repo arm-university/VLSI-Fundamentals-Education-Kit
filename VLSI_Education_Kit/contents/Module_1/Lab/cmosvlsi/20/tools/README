@@ -1,0 +1,37 @@
+cif2ps Release notes
+22 April 2010 David_Harris@hmc.edu
+
+You are free to modify and improve this code so long as you attribute the original source and make your improvements freely available.
+
+To run:
+Create a .cif file from Electric or Cadence
+   Use the NCSU layer map (in the samples directory, or the NCSU PDK)
+Customize the colors with a layermap.txt file in your local directory or 
+  use the default one in /cad/cif2ps/layermap.txt
+  (change C code and recompile to adjust this default location)
+invoke with
+   cif2ps filename.cif
+
+Known limitations:
+
+Transparency does not work with polygons.  The I/O pads from the University of Utah pad library have two large metal2 polygons partially covering the drivers, causing them to look a bit funny.
+
+To recompile:
+type "make"
+
+Other Notes:
+
+For CMOS VLSI Design illustrations, I want really sharp pictures with clean transparency and with outlines of each layer.  This can be done for small cells by:
+      use cif2psc with -nt no transparency option
+      open .ps in Illustrator
+      ungroup everything
+      Select a metal3 wire.  
+         Use Select * Same Fill Color to select all.  
+         Group.
+         Set Transparency to 70%.
+         Use Windows * Pathfinder * Merge to merge all rectangles on the layer (seems very slow for M2 on a TinyChip)
+         Set the outline color to a darker shade and an appropriate stroke width
+     Repeat for Metal2, Metal1, Poly    
+
+
+

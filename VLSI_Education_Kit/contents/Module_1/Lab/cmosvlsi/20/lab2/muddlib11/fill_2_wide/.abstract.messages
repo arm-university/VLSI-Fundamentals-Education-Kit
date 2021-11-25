@@ -1,0 +1,9 @@
+cUiAddMessageView {fill_2_wide} {abstract.pin} {514} {(ABS-514): Cell fill_2_wide: prBoundary successfully created.}
+cUiAddMessageView {fill_2_wide} {abstract.pin} {515} {(ABS-515): Cell fill_2_wide: prBoundary does not enclose all cell view geometry. Specify any missing layers in the Using geometry on layers field.}
+cUiAddMessageView {fill_2_wide} {abstract.pin} {501} {(ABS-501): Cell fill_2_wide: 2 existing terminals, no pins will be added}
+cUiAddMessageView {fill_2_wide} {abstract.pin} {1088} {(ABS-1088): Cell fill_2_wide: has no input terminals}
+cUiAddMessageView {fill_2_wide} {abstract.pin} {1089} {(ABS-1089): Cell fill_2_wide: has no output terminals}
+cUiAddMessageView {fill_2_wide} {abstract.ext} {602} {(ABS-602): Cell fill_2_wide: extracting 2 nets}
+cUiAddMessageView {fill_2_wide} {abstract.ext} {604} {(ABS-604): Cell fill_2_wide: extracting net vdd!, 1 of 2}
+cUiAddMessageView {fill_2_wide} {abstract.ext} {604} {(ABS-604): Cell fill_2_wide: extracting net gnd!, 2 of 2}
+cUiAddMessageView {fill_2_wide} {abstract} {914} {(ABS-914): Cell fill_2_wide: predefined site core will be used}

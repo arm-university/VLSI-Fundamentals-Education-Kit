@@ -1,0 +1,4 @@
+INCLUDE /proj/ncsu/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib
+#DEFINE muddlib11 /courses/cmosvlsi/20/lib/muddlib10
+#DEFINE wordlib8 /courses/cmosvlsi/20/lib/wordlib8
+DEFINE HMC_Sheets_8ths /courses/cmosvlsi/20/lib/oa/HMC_Sheets_8ths

@@ -1,0 +1,4 @@
+mux2_1x_8 I1 ( .s(ImmSrc), .y(ExtImm[7:0]), .d1({Instr[5:0],
+     cds_globals.gnd_, cds_globals.gnd_}), .d0(Instr[7:0]));
+
+endmodule

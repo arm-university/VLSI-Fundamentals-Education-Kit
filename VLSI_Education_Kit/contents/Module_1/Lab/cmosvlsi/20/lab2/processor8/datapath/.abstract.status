@@ -1,0 +1,7 @@
+cUiSelectCellP {datapath}
+cUiSetViewStatus {datapath} {layout} {1}
+cUiSetViewStatus {datapath} {logical} {0}
+cUiSetViewStatus {datapath} {abstract.pin} {3}
+cUiSetViewStatus {datapath} {abstract.ext} {1}
+cUiSetViewStatus {datapath} {abstract} {3}
+cUiSetViewStatus {datapath} {abstract.ver} {0}

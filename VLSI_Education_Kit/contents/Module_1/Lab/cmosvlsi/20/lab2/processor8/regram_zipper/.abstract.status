@@ -1,0 +1,8 @@
+cUiMoveCellToBin {regram_zipper} {Ignore}
+cUiSelectCellP {regram_zipper}
+cUiSetViewStatus {regram_zipper} {layout} {1}
+cUiSetViewStatus {regram_zipper} {logical} {0}
+cUiSetViewStatus {regram_zipper} {abstract.pin} {0}
+cUiSetViewStatus {regram_zipper} {abstract.ext} {0}
+cUiSetViewStatus {regram_zipper} {abstract} {0}
+cUiSetViewStatus {regram_zipper} {abstract.ver} {0}

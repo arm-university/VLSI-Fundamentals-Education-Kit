@@ -1,0 +1,18 @@
+rnmos #(0.1)  M10( net40, net45, net42);
+rpmos #(0.1)  M8( net40, net23, net42);
+pmos #(0.1)  M2( r2, net11, read2b);
+pmos #(0.1)  M3( net11, cds_globals.vdd_, net42);
+pmos #(0.1)  M4( net2, cds_globals.vdd_, net42);
+pmos #(0.1)  M5( r1, net2, read1b);
+pmos #(0.1)  M9( net23, cds_globals.vdd_, write);
+pmos #(0.1)  M13( net42, cds_globals.vdd_, net40);
+pmos #(0.1)  M15( net40, w, writeb);
+nmos #(0.1)  M0( r2, net33, read2);
+nmos #(0.1)  M1( net33, cds_globals.gnd_, net42);
+nmos #(0.1)  M6( r1, net27, read1);
+nmos #(0.1)  M7( net27, cds_globals.gnd_, net42);
+nmos #(0.1)  M11( net45, cds_globals.gnd_, writeb);
+nmos #(0.1)  M12( net42, cds_globals.gnd_, net40);
+nmos #(0.1)  M14( net40, w, write);
+
+endmodule

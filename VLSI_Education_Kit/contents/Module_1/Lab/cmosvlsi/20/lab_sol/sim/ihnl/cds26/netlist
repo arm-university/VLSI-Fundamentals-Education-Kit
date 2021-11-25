@@ -1,0 +1,28 @@
+// Library - wordlib8, Cell - flopen_1x_8, View - schematic
+// LAST TIME SAVED: Jun 14 19:28:38 2020
+// NETLIST TIME: Aug 21 08:42:26 2020
+`timescale 1ns / 1ns 
+
+module flopen_1x_8 ( q, d, en, ph1, ph2 );
+
+
+input  en, ph1, ph2;
+
+output [7:0]  q;
+
+input [7:0]  d;
+
+
+specify 
+    specparam CDS_LIBNAME  = "wordlib8";
+    specparam CDS_CELLNAME = "flopen_1x_8";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+invbuf_4x I2 ( .s(en), .s_out(net010), .sb_out(net09));
+flopen_dp_1x flopen_dp_1x[7:0] ( .q(q[7:0]), .d(d[7:0]), .en(net010),
+     .enb(net09), .ph1(net2), .ph1b(net6), .ph2(net3), .ph2b(net4));
+clkinvbufdual_4x I1 ( .ph1b(net6), .ph2(ph2), .ph2b(net4),
+     .ph2buf(net3), .ph1buf(net2), .ph1(ph1));
+
+endmodule

@@ -1,0 +1,8 @@
+cUiMoveCellToBin {yzdetect_8} {Ignore}
+cUiSelectCellP {yzdetect_8}
+cUiSetViewStatus {yzdetect_8} {layout} {1}
+cUiSetViewStatus {yzdetect_8} {logical} {0}
+cUiSetViewStatus {yzdetect_8} {abstract.pin} {0}
+cUiSetViewStatus {yzdetect_8} {abstract.ext} {0}
+cUiSetViewStatus {yzdetect_8} {abstract} {0}
+cUiSetViewStatus {yzdetect_8} {abstract.ver} {0}

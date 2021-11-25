@@ -1,0 +1,7 @@
+cUiMoveCellToBin {4col} {Ignore}
+cUiSetViewStatus {4col} {layout} {1}
+cUiSetViewStatus {4col} {logical} {0}
+cUiSetViewStatus {4col} {abstract.pin} {0}
+cUiSetViewStatus {4col} {abstract.ext} {0}
+cUiSetViewStatus {4col} {abstract} {0}
+cUiSetViewStatus {4col} {abstract.ver} {0}

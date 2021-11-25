@@ -1,0 +1,18 @@
+// Library - muddlib11, Cell - mux2_dp_1x, View - cmos_sch
+// LAST TIME SAVED: Jun 14 20:03:28 2020
+// NETLIST TIME: Aug 21 08:42:26 2020
+`timescale 1ns / 1ns 
+
+module mux2_dp_1x ( y, d0, d1, s, sb );
+
+output  y;
+
+input  d0, d1, s, sb;
+
+
+specify 
+    specparam CDS_LIBNAME  = "muddlib11";
+    specparam CDS_CELLNAME = "mux2_dp_1x";
+    specparam CDS_VIEWNAME = "cmos_sch";
+endspecify
+

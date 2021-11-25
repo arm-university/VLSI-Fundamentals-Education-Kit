@@ -1,0 +1,14 @@
+cUiAddMessageView {fulladder} {abstract.pin} {514} {(ABS-514): Cell fulladder: prBoundary successfully created.}
+cUiAddMessageView {fulladder} {abstract.pin} {515} {(ABS-515): Cell fulladder: prBoundary does not enclose all cell view geometry. Specify any missing layers in the Using geometry on layers field.}
+cUiAddMessageView {fulladder} {abstract.pin} {501} {(ABS-501): Cell fulladder: 7 existing terminals, no pins will be added}
+cUiAddMessageView {fulladder} {abstract.ext} {602} {(ABS-602): Cell fulladder: extracting 7 nets}
+cUiAddMessageView {fulladder} {abstract.ext} {604} {(ABS-604): Cell fulladder: extracting net s, 1 of 7}
+cUiAddMessageView {fulladder} {abstract.ext} {604} {(ABS-604): Cell fulladder: extracting net cout, 2 of 7}
+cUiAddMessageView {fulladder} {abstract.ext} {604} {(ABS-604): Cell fulladder: extracting net c, 3 of 7}
+cUiAddMessageView {fulladder} {abstract.ext} {604} {(ABS-604): Cell fulladder: extracting net b, 4 of 7}
+cUiAddMessageView {fulladder} {abstract.ext} {604} {(ABS-604): Cell fulladder: extracting net a, 5 of 7}
+cUiAddMessageView {fulladder} {abstract.ext} {604} {(ABS-604): Cell fulladder: extracting net gnd!, 6 of 7}
+cUiAddMessageView {fulladder} {abstract.ext} {604} {(ABS-604): Cell fulladder: extracting net vdd!, 7 of 7}
+cUiAddMessageView {fulladder} {abstract} {1076} {(ABS-1076): Cell fulladder: Terminal a has no pins on Metal1-Metal2 Routing grid}
+cUiAddMessageView {fulladder} {abstract} {1076} {(ABS-1076): Cell fulladder: Terminal b has no pins on Metal1-Metal2 Routing grid}
+cUiAddMessageView {fulladder} {abstract} {914} {(ABS-914): Cell fulladder: predefined site core will be used}

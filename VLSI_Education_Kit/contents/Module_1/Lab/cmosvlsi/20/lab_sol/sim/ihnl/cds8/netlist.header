@@ -1,0 +1,25 @@
+// Library - processor8_nn, Cell - condinv_8, View - schematic
+// LAST TIME SAVED: Aug 21 07:30:16 2020
+// NETLIST TIME: Aug 21 08:42:26 2020
+`timescale 1ns / 1ns 
+
+module condinv_8 ( y, a, invert );
+
+
+input  invert;
+
+output [7:0]  y;
+
+input [7:0]  a;
+
+// Buses in the design
+
+wire  [7:0]  a_b;
+
+
+specify 
+    specparam CDS_LIBNAME  = "processor8_nn";
+    specparam CDS_CELLNAME = "condinv_8";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

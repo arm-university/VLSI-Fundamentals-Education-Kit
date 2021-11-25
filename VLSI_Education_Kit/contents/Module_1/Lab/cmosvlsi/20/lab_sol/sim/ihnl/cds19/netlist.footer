@@ -1,0 +1,5 @@
+fulladder fulladder[7:0] ( {cout, c[6], c[5], c[4], c[3], c[2], c[1],
+     c[0]}, s[7:0], a[7:0], b[7:0], {c[6], c[5], c[4], c[3], c[2],
+     c[1], c[0], cin});
+
+endmodule

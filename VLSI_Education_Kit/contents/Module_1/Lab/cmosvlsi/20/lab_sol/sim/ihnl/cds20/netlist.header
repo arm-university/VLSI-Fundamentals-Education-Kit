@@ -1,0 +1,33 @@
+// Library - processor8_nn, Cell - alu, View - schematic
+// LAST TIME SAVED: Aug 21 07:33:44 2020
+// NETLIST TIME: Aug 21 08:42:26 2020
+`timescale 1ns / 1ns 
+
+module alu ( ALUFlags, result, ALUControl, a, b );
+
+
+
+output [1:0]  ALUFlags;
+output [7:0]  result;
+
+input [7:0]  a;
+input [7:0]  b;
+input [1:0]  ALUControl;
+
+// Buses in the design
+
+wire  [7:0]  sumresult;
+
+wire  [7:0]  orresult;
+
+wire  [7:0]  andresult;
+
+wire  [7:0]  b2;
+
+
+specify 
+    specparam CDS_LIBNAME  = "processor8_nn";
+    specparam CDS_CELLNAME = "alu";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
