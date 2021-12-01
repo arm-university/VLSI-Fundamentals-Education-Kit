@@ -29,7 +29,7 @@ To produce students with solid introductory knowledge on VLSI concepts and appli
 
 Please note, Cadence Innovus tool can be used in place of the older tool Cadence SoC Encounter for PnR. 
 
-The complete Cadence version of this course can be [here](https://www.cadence.com/en_US/home/company/cadence-academic-network/educators/vlsi-fundamentals.html?utm_source=arm&utm_medium=armweb&utm_campaign=vlsikit&utm_content=10_21%20VLSI%20Fundamentals).
+An all Cadence tools version of this course can be found [here](https://www.cadence.com/en_US/home/company/cadence-academic-network/educators/vlsi-fundamentals.html?utm_source=arm&utm_medium=armweb&utm_campaign=vlsikit&utm_content=10_21%20VLSI%20Fundamentals).
 
 ## Syllabus
 1. Introduction
