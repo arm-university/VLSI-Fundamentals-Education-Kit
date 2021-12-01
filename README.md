@@ -21,9 +21,13 @@ VLSI Fundamentals: A Practical Approach Education Kit covers the fundamentals of
 ## Course Aim
 To produce students with solid introductory knowledge on VLSI concepts and application of these concepts in simulation, verification, and physical implementation of a simplified microprocessor using standard industry tools.
 
-## Tools notice
-Cadence Innovus tool can be used in place of the older tool Cadence SoC Encounter for PnR.
-* **Affected Lab:** Lab 3. 
+## Tools Used
+* Cadnece Virtuoso for schematic capture and layout editing.
+* Cadence NCSim for simulation.
+* Synopsys Design Compiler for Synthesis.
+* Cadence SoC Encounter for PnR.
+Cadence Innovus tool can be used in place of the older tool Cadence SoC Encounter for PnR. The complete Cadence version of this course can be [here](https://www.cadence.com/en_US/home/company/cadence-academic-network/educators/vlsi-fundamentals.html?utm_source=arm&utm_medium=armweb&utm_campaign=vlsikit&utm_content=10_21%20VLSI%20Fundamentals
+VLSI Fundamentals).
 
 ## Syllabus
 1. Introduction
@@ -48,18 +52,14 @@ Cadence Innovus tool can be used in place of the older tool Cadence SoC Encounte
 1. Packaging, I/O & Power Distribution
 
 
-
-
-
-
 ## License
-You are free to fork or clone this material. See [LICENSE.md](https://github.com/arm-university/Efficient-Embedded-Systems-Design-Education-Kit/blob/main/License/LICENSE.md) for the complete license.
+You are free to fork or clone this material. See [LICENSE.md](https://github.com/arm-university/VLSI-Fundamentals-A-Practical-Approach-Education-Kit/blob/main/License/LICENSE.md) for the complete license.
 
 ## Inclusive Language Commitment
 Arm is committed to making the language we use inclusive, meaningful, and respectful. Our goal is to remove and replace non-inclusive language from our vocabulary to reflect our values and represent our global ecosystem.
  
 Arm is working actively with our partners, standards bodies, and the wider ecosystem to adopt a consistent approach to the use of inclusive language and to eradicate and replace offensive terms. We recognise that this will take time. This course may contain references to non-inclusive language; it will be updated with newer terms as those terms are agreed and ratified with the wider community. We recognise that some of you will be accustomed to using the previous terms and may not immediately recognise their replacements. Please refer to the following examples:
 
-•	When introducing the AMBA 3 AHB-Lite Protocols, we will use the term ‘Manager’ instead of ‘Master’ and ‘Subordinate’ instead of ‘Slave’. 
+*	When introducing edge-triggered Flip-Flops, we will use the term ‘JK Flip-flop’ instead of ‘master-slave flip-flop’. 
  
 Contact us at education@arm.com with questions or comments about this course. You can also report non-inclusive and offensive terminology usage in Arm content at terms@arm.com.
