@@ -27,7 +27,7 @@ To produce students with solid introductory knowledge on VLSI concepts and appli
 * Synopsys Design Compiler for Synthesis.
 * Cadence SoC Encounter for PnR.
 
-Please note, Cadence Innovus tool can be used in place of the older tool Cadence SoC Encounter for PnR. 
+Please note, the Cadence Innovus tool can be used instead of the older tool Cadence SoC Encounter for PnR. 
 
 An all Cadence tools version of this course can be found [here](https://www.cadence.com/en_US/home/company/cadence-academic-network/educators/vlsi-fundamentals.html?utm_source=arm&utm_medium=armweb&utm_campaign=vlsikit&utm_content=10_21%20VLSI%20Fundamentals).
 
