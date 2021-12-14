@@ -16,7 +16,7 @@ VLSI Fundamentals: A Practical Approach Education Kit covers the fundamentals of
 
 * A full set of 20 modules with lecture slides and lab exercises (in selected modules) ready for use in a typical 10-12-week undergraduate course (full syllabus below).
 * Lab manual with solutions for faculty. 
-* **Level:** Students are required to have an understanding of digital electronics and the basics of hardware description language (Verilog).
+* **Prerequisites:** Students are required to have an understanding of digital electronics and the basics of hardware description language (Verilog).
 
 ## Course Aim
 To produce students with solid introductory knowledge on VLSI concepts and application of these concepts in simulation, verification, and physical implementation of a simplified microprocessor using standard industry tools.
