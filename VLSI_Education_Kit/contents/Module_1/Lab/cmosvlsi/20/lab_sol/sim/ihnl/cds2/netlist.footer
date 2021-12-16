@@ -1,4 +1,0 @@
-inv_4x I2 ( .y(sb_out), .a(s));
-inv_4x I3 ( .y(s_out), .a(sb_out));
-
-endmodule

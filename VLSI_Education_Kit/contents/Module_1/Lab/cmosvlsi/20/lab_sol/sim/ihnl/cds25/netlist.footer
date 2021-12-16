@@ -1,4 +1,0 @@
-clkinvbuf_4x I0 ( .phb(ph2b), .phbuf(ph2buf), .ph(ph2));
-clkinvbuf_4x I1 ( .phb(ph1b), .phbuf(ph1buf), .ph(ph1));
-
-endmodule

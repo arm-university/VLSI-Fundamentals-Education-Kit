@@ -1,6 +1,0 @@
-flop_dp_1x flop_dp_1x[7:0] ( .q(q[7:0]), .d(d[7:0]), .ph1(net20),
-     .ph1b(net24), .ph2(net21), .ph2b(net22));
-clkinvbufdual_4x I1 ( .ph1b(net24), .ph2(ph2), .ph2b(net22),
-     .ph2buf(net21), .ph1buf(net20), .ph1(ph1));
-
-endmodule

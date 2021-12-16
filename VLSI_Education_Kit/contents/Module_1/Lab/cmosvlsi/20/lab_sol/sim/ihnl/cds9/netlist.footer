@@ -1,8 +1,0 @@
-pmos #(0.1)  M2( net27, mid, b);
-pmos #(0.1)  M3( mid, cds_globals.vdd_, a);
-pmos #(0.1)  M4( y, cds_globals.vdd_, net27);
-nmos #(0.1)  M0( net27, cds_globals.gnd_, b);
-nmos #(0.1)  M1( net27, cds_globals.gnd_, a);
-nmos #(0.1)  M5( y, cds_globals.gnd_, net27);
-
-endmodule

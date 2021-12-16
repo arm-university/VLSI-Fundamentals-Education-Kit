@@ -1,9 +1,0 @@
-regram_8 I1 ( .w(w[7:0]), .read2b(read2b), .read2(read2),
-     .read1b(read1b), .read1(read1), .writeb(writeb), .r1(r1[7:0]),
-     .r2(r2[7:0]), .write(write));
-regram_zipper I0 ( .write(write), .writeb(writeb), .read1(read1),
-     .read1b(read1b), .read2(read2), .read2b(read2b),
-     .RegWrite(RegWrite), .ph2(ph2), .ra1(ra1[2:0]), .ra2(ra2[2:0]),
-     .wa(wa[2:0]));
-
-endmodule

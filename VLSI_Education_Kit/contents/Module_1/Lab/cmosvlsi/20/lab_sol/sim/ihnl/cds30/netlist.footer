@@ -1,9 +1,0 @@
-flopenr_dp_1x flopenr_dp_1x[7:0] ( .q(q[7:0]), .d(d[7:0]), .en(net010),
-     .enb(net09), .ph1(net2), .ph1b(net6), .ph2(net3), .ph2b(net4),
-     .resetb(net08));
-clkinvbufdual_4x I1 ( .ph1b(net6), .ph2(ph2), .ph2b(net4),
-     .ph2buf(net3), .ph1buf(net2), .ph1(ph1));
-invbuf_4x I2 ( .s(en), .s_out(net010), .sb_out(net09));
-inv_4x I3 ( .y(net08), .a(reset));
-
-endmodule

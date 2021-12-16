@@ -1,1 +1,0 @@
-sim-nc arm_multi.sv -f verilog.inpfiles

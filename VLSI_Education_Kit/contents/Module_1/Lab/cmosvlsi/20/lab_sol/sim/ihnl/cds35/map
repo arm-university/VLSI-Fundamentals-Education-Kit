@@ -1,5 +1,0 @@
-( ( net
-( "vdd!" "cds_globals.vdd_" )
-( "gnd!" "cds_globals.gnd_" )
- )
- )

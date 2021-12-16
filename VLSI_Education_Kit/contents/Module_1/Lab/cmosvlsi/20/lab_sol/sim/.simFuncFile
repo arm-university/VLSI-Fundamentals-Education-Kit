@@ -1,8 +1,0 @@
-simFuncDPLList = '(
-    (nil libName "NCSU_Analog_Parts" cellName "pmos4"
-    viewName "functional" filePath "/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Analog_Parts/pmos4/functional/verilog.v"
-    ) 
-    (nil libName "NCSU_Analog_Parts" cellName "nmos4"
-    viewName "functional" filePath "/proj/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Analog_Parts/nmos4/functional/verilog.v"
-    )
-)
