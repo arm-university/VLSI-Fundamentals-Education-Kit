@@ -15,7 +15,7 @@ VLSI Fundamentals: A Practical Approach Education Kit covers the fundamentals of
  ## Kit specification:
 
 * A full set of 20 modules with lecture slides and lab exercises (in selected modules) ready for use in a typical 10-12-week undergraduate course (full syllabus below).
-* Lab manual with solutions for faculty. Additional libraries for lab exercises are available for request [here](https://community.arm.com/aup/vlsi/).
+* Lab manuals include additional libraries for lab exercises and solutions for faculty. 
 * **Prerequisites:** Students are required to have an understanding of digital electronics and the basics of hardware description language (Verilog).
 
 ## Course Aim
@@ -56,6 +56,9 @@ An all Cadence tools version of this course can be found [here](https://www.cade
 
 ## License
 You are free to fork or clone this material. See [LICENSE.md](https://github.com/arm-university/VLSI-Fundamentals-A-Practical-Approach-Education-Kit/blob/main/License/LICENSE.md) for the complete license.
+All relevant lab files are provided and used with permission from the following authors:
+*	Prof. David Harris
+*	Prof. Erik Brunvand 
 
 ## Inclusive Language Commitment
 Arm is committed to making the language we use inclusive, meaningful, and respectful. Our goal is to remove and replace non-inclusive language from our vocabulary to reflect our values and represent our global ecosystem.
