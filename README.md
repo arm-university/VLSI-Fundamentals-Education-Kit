@@ -22,7 +22,7 @@ VLSI Fundamentals: A Practical Approach Education Kit covers the fundamentals of
 To produce students with solid introductory knowledge on VLSI concepts and application of these concepts in simulation, verification, and physical implementation of a simplified microprocessor using standard industry tools.
 
 ## Tools Used
-* Cadnece Virtuoso for schematic capture and layout editing.
+* Cadence Virtuoso for schematic capture and layout editing.
 * Cadence NCSim for simulation.
 * Synopsys Design Compiler for Synthesis.
 * Cadence SoC Encounter for PnR.
