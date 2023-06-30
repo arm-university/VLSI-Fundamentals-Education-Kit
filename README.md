@@ -23,7 +23,7 @@ To produce students with solid introductory knowledge on VLSI concepts and appli
 
 ## Tools Used
 * Cadence Virtuoso for schematic capture and layout editing.
-* Cadence NCSim for simulation.
+* Cadence NCSim (Incisive) for simulation.
 * Synopsys Design Compiler for Synthesis.
 * Cadence SoC Encounter for PnR.
 
