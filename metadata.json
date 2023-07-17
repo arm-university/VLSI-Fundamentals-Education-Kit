@@ -135,7 +135,7 @@
         {
             "title": "Nonideal Transistor Theory, Module 5",
             "subject": ["arm", "computer engineering", "hardware-designs", "vlsi", "electrical-engineering", "cadence-virtuoso", "microprocessor-implementation", "synopsis-design", "devices-circuits-materials"],
-            "type": "Lab",
+            "type": "Lecture",
             "format": "doc",
             "creator": "David Money Harris",
             "publisher": "Arm Education",
@@ -192,7 +192,7 @@
         {
             "title": "Datapath Design and Verification, Module 7, Lab 2",
             "subject": ["arm", "computer engineering", "hardware-designs", "vlsi", "electrical-engineering", "cadence-virtuoso", "microprocessor-implementation", "synopsis-design", "devices-circuits-materials"],
-            "type": "Lecture",
+            "type": "Lab",
             "format": "ppt",
             "creator": "David Money Harris",
             "publisher": "Arm Education",
