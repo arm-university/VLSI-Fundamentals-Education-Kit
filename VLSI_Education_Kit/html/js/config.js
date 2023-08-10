@@ -20,170 +20,170 @@ var index =
       {
         "column": "modules",
         "name": "Module 1: Introduction",
-        "link": "contents/Module_1/Module_1_intro.pptx"
+        "link": "contents/Module01_IntroToVLSI/Lecture01_IntroToVLSI.pptx"
       },
 	  {
         "column": "exercises",
         "name": "Getting Started Lab Manual",
-        "link": "contents/Module_1/Lab/Getting_Started.docx"
+        "link": "contents/Module01_IntroToVLSI/Lab00_GettingStarted/Lab00_GettingStarted.docx"
       },
 	  {
         "column": "exercises",
         "name": "Supporting files and solutions for all labs",
-        "link": "contents/Module_1/Lab/cmosvlsi.tar.gz"
+        "link": "contents/Module01_IntroToVLSI/Lab00_GettingStarted/cmosvlsi.tar.gz"
       }
     ],
     [
       {
         "column": "modules",
         "name": "Module 2: Circuit & Layout",
-        "link": "contents/Module_2/Module_2_cktlay.pptx"
+        "link": "contents/Module02_CircuitsAndLayout/Lecture02_CircuitsAndLayout.pptx"
       },
 	  {
         "column": "exercises",
         "name": "Lab Manual",
-        "link": "contents/Module_2/Lab/LAB_1.docx"
+        "link": "contents/Module02_CircuitsAndLayout/Lab01_CellDesignAndVerification/Lab01_CellDesignAndVerification.docx"
       }
     ],
     [
       {
         "column": "modules",
         "name": "Module 3: Simple Processor Example",
-        "link": "contents/Module_3/Module_3_processorEx.pptx"
+        "link": "contents/Module03_ProcessorExample/Lecture03_ProcessorExample.pptx"
       }
     ],
     [
       {
         "column": "modules",
         "name": "Module 4: CMOS Transistor Theory",
-        "link": "contents/Module_4/Module_4_transistors.pptx"
+        "link": "contents/Module04_Transistors/Lecture04_Transistors.pptx"
       }
     ],
     [
       {
         "column": "modules",
-        "name": "Module 5: Non-ideal Transistor Theory ",
-        "link": "contents/Module_5/Module_5_nonideal.pptx"
+        "name": "Module 5: Non-ideal Transistor Theory",
+        "link": "contents/Module05_NonidealTransistorTheory/Lecture05_NonidealTransistorTheory.pptx"
       }
     ],
     [
 	  {
         "column": "modules",
         "name": "Module 6: DC & Transient Response",
-        "link": "contents/Module_6/Module_6_dctran.pptx"
+        "link": "contents/Module06_DCandTransientResponse/Lecture06_DCandTransientResponse.pptx"
       }
     ],
     [
       {
         "column": "modules",
         "name": "Module 7: Logical Effort",
-        "link": "contents/Module_7/Module_7_logicaleffort.pptx"
+        "link": "contents/Module07_LogicalEffort/Lecture07_LogicalEffort.pptx"
       },
 	  {
         "column": "exercises",
         "name": "Lab Manual",
-        "link": "contents/Module_7/Lab/LAB_2.docx"
+        "link": "contents/Module07_LogicalEffort/Lab02_DatapathDesignAndVerification/Lab02_DatapathDesignAndVerification.docx"
       }
     ],
     [
       {
         "column": "modules",
         "name": "Module 8: Power",
-        "link": "contents/Module_8/Module_8_power.pptx"
+        "link": "contents/Module08_Power/Lecture08_Power.pptx"
       }
     ],
     [
       {
         "column": "modules",
         "name": "Module 9: Scaling",
-        "link": "contents/Module_9/Module_9_scaling.pptx"
+        "link": "contents/Module09_Scaling/Lecture09_Scaling.pptx"
       }
     ],
     [
 	  {
         "column": "modules",
         "name": "Module 10: SPICE Simulation",
-        "link": "contents/Module_10/Module_10_spice.pptx"
+        "link": "contents/Module10_SPICEsimulation/Lecture10_SPICEsimulation.pptx"
       }
     ],
     [
       {
         "column": "modules",
         "name": "Module 11: Combinational Circuit Design",
-        "link": "contents/Module_11/Module_11_comb.pptx"
+        "link": "contents/Module11_CombinationalCircuitDesign/Lecture11_CircuitDesign.pptx"
       },
 	  {
         "column": "exercises",
         "name": "Lab Manual",
-        "link": "contents/Module_11/Lab/LAB_3.docx"
+        "link": "contents/Module11_CombinationalCircuitDesign/Lab03_ControllerDesign/Lab03_ControllerDesign.docx"
       }
     ],
     [
       {
         "column": "modules",
         "name": "Module 12: Sequential Circuit Design",
-        "link": "contents/Module_12/Module_12_seq.pptx"
+        "link": "contents/Module12_SequentialCircuitDesign/Lecture12_SequentialCircuitDesign.pptx"
       }
     ],
     [
       {
         "column": "modules",
         "name": "Module 13: Wires",
-        "link": "contents/Module_13/Module_13_wires.pptx"
+        "link": "contents/Module13_Wires/Lecture13_Wires.pptx"
       }
     ],
 	[
       {
         "column": "modules",
         "name": "Module 14: Adders",
-        "link": "contents/Module_14/Module_14_adders.pptx"
+        "link": "contents/Module14_Adders/Lecture14_Adders.pptx"
       }
     ],
 	[
       {
         "column": "modules",
         "name": "Module 15: Datapath Functional Units",
-        "link": "contents/Module_15/Module_15_datapath.pptx"
+        "link": "contents/Module15_Datapath/Lecture15_Datapath.pptx"
       }
     ],
 	[
       {
         "column": "modules",
         "name": "Module 16: SRAM",
-        "link": "contents/Module_16/Module_16_sram.pptx"
+        "link": "contents/Module16_SRAM/Lecture16_SRAM.pptx"
       }
     ],
 	[
       {
         "column": "modules",
         "name": "Module 17: Clocking",
-        "link": "contents/Module_17/Module_17_clocking.pptx"
+        "link": "contents/Module17_Clocking/Lecture17_Clocking.pptx"
       },
 	  {
         "column": "exercises",
         "name": "Lab Manual",
-        "link": "contents/Module_17/Lab/LAB_4.docx"
+        "link": "contents/Module17_Clocking/Lab04_ChipAssembly/Lab04_ChipAssembly.docx"
       }
     ],
 	[
       {
         "column": "modules",
         "name": "Module 18: Pitfalls",
-        "link": "contents/Module_18/Module_18_pitfalls.pptx"
+        "link": "contents/Module18_Pitfalls/Lecture18_Pitfalls.pptx"
       }
     ],
 	[
       {
         "column": "modules",
         "name": "Module 19: Test",
-        "link": "contents/Module_19/Module_19_test.pptx"
+        "link": "contents/Module19_Test/Lecture19_Test.pptx"
       }
     ],
 	[
       {
         "column": "modules",
-        "name": "Module 20: Packing, I/O & Power Distribution",
-        "link": "contents/Module_20/Module_20_custom.pptx"
+        "name": "Module 20: Custom VLSI Design",
+        "link": "contents/Module20_CustomVLSIDesign/Lecture20_CustomVLSIDesign.pptx"
       }
     ]
   ]
