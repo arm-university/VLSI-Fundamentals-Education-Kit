@@ -82,7 +82,7 @@ var index =
 	  {
         "column": "exercises",
         "name": "Lab Manual",
-        "link": "contents/Module07_LogicalEffort/Lab02_DatapathDesignAndVerification/Lab02_DatapathDesignAndVerification.docx"
+        "link": "contents/Module07_LogicalEffort/Lab02_DatapathDesign/Lab02_DatapathDesign.docx"
       }
     ],
     [
