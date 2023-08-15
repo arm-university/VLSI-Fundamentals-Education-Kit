@@ -42,7 +42,7 @@ var index =
 	  {
         "column": "exercises",
         "name": "Lab Manual",
-        "link": "contents/Module02_CircuitsAndLayout/Lab01_CellDesignAndVerification/Lab01_CellDesignAndVerification.docx"
+        "link": "contents/Module02_CircuitsAndLayout/Lab01_CellDesign/Lab01_CellDesign.docx"
       }
     ],
     [
