@@ -35,10 +35,21 @@ To the extent that any claim in any patent application filed by you would not ha
 12. CONTACTING US. If you have any queries in relation to this Agreement or the Materials, please email education@arm.com.
 
 13. SPECIAL CONDITIONS. The provisions of this Clause 13 shall take precedence in the event of any conflict with the remainder of this Agreement.
-Use of the pedagogical processor model provided with the Introduction to Computer Architecture Education Kit (the "Arm Education Core") is subject to the following special conditions:
+
+    13.1. <ins>Arm Education Core</ins>: Use of the pedagogical processor model provided with the Introduction to Computer Architecture Education Kit (the "Arm Education Core") is subject to the following special conditions:
 
     (a) you may only refer to or publish the Arm Education Core, or any modifications you make to the Arm Education Core or any results you obtain from its use, in whole or in part if you have first obtained Arm's specific prior written consent by emailing us at the address specified in Clause 12 above;
 
     (b) you may use the Arm Education Core to synthesize and implement an SoC on FPGA or for an ASIC implementation of the SoC for non-commercial educational purposes (as defined in Clause 5 above);
 
     (c) you may not make any claims about the Arm Education Core's functionality or otherwise other than those published by Arm. The Arm Education Core is not representative of any commercially available Arm processors and you may not make any statements that indicate or imply the contrary.
+
+    13.2. <ins>Knowledge, Skills and Abilities Framework (the “KSA Framework”)</ins>: Use of the KSA Framework is subject to the following special conditions:
+
+    (a) You may use, copy and modify the KSA Framework for internal use only;
+
+    (b) If you modify the KSA Framework, the modified version shall include attribution to Arm as the source of the original KSA Framework. Attribution shall be in the following format or a format which provides substantially similar information: “Arm Limited (2024). Knowledge, Skills, and Abilities Framework, version 1.0”;
+
+    (c) You may not distribute or grant any sublicenses in respect of the KSA Framework, or any modified version of the KSA Framework modified by you under the license granted in Clause 13.2(a), except as expressly approved by Arm in writing (contact education@arm.com to request approval) and subject to the terms and conditions set out in such written approval from Arm; and
+
+    (d) You shall not make any representations or warranties on behalf of Arm in respect of the KSA Framework, or in respect of modified versions of the KSA Framework created by You under the license granted in Clause 13.2(a). Furthermore, you will not represent or imply that Arm endorses any third-party products, materials or services, including without limitation any modified versions of the KSA Framework created by you under the terms of this Agreement, except as expressly permitted by Arm in writing separately.
